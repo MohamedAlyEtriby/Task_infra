@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+.Inframodern {
+  border:1px solid rgb(223, 30, 146);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.ant-pagination{
+  display: flex ;
+  justify-content: center !important;
+}
+.ant-table-header {
+  border: 1px solid rgb(214, 16, 109) !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+.userdetailscom{
+  display: grid;
+  grid-template-columns: 250px 210px 180px auto 10px;
+  gap: 10px;
+  margin-bottom: 20px;
+  place-items: center ;
+}
+input{
+  border: 2px solid gray;
+}

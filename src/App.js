@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import SideBar from "./components/SideBar";
+import RightBar from "./components/RightBar";
+import { useContext, useState } from "react";
+import NewBrand from "./components/NewBrand";
+import ContextProvider, { Mycontext } from "./context/context";
 
 function App() {
+  const { setshow, show } = useContext(Mycontext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full min-h-screen flex ">
+      <SideBar />
+      <RightBar />
+
+      {show && <NewBrand />}
     </div>
   );
 }
