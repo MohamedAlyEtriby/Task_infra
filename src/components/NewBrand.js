@@ -7,7 +7,7 @@ import UserDetail from "./UserDetail";
 import UserDetailCom from "./UserDetailCom";
 import { Mycontext } from "../context/context";
 const NewBrand = () => {
-  const { setshow, show } = useContext(Mycontext);
+  const { setshow } = useContext(Mycontext);
 
   return (
     <div className="w-full h-screen bg-transparent fixed z-20 overflow-hidden">
@@ -18,7 +18,7 @@ const NewBrand = () => {
             setshow(false);
           }}
         ></div>
-        <div className="w-3/4 h-3/4 bg-white  opacity-100 z-50 pl-7 pr-7">
+        <div className="w-5/6 h-3/4 bg-white  opacity-100 z-50 pl-7 pr-7">
           <div className="h-20 w-full  flex items-center justify-between">
             <div className="flex items-center">
               <VscDiffAdded size={30} className="mr-2 text-[#f45]" />
@@ -32,13 +32,13 @@ const NewBrand = () => {
               <AiOutlineClose size={30} color="gray" />
             </button>
           </div>
-          <div className="flex w-full justify-between items-center p-2 bg-[#eef0f3] rounded">
+          <div className="userdetailscom w-full justify-between items-center p-2 bg-[#eef0f3] rounded">
             <UserInfo
               header="Email"
               detail="Type this user E-mail to add and "
             />
-            <UserInfo header="job Title" detail="What's the user job title" />
-            <UserInfo header="code" detail="Enter User's Code " />
+            <UserInfo header="Job Title" detail="What's the user job title" />
+            <UserInfo header="Code" detail="Enter User's Code " />
             <UserInfo
               header="Authorized Module"
               detail="which infamodern modeule this user's authorized to use "
